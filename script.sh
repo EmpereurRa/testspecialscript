@@ -1,3 +1,5 @@
+#this was an experiment I used to learn bash scripting and ncurses. I don't know if you should really use this ever.
+
 function quit(){
 	unset answer & unset tutorialrequests & unset row & unset column & unset answer & unset backrequests & unset quitrequests
 	exit 1
@@ -71,7 +73,8 @@ do
 			answer='blank'
 			sp="9"
 			ahoy=$(dialog --title "which row" --inputbox "Which row would you like to go to?"  10 20 3>&1 1>&2 2>&3 3>&- )
-			[[ "$rowsetmanuallyalready" == 1 ]] && dialog --title "so?" --yesno "Do you want to set this row manually, or do you want to set it's pattern?" 10 30
+			[[ "$rowsetmanuallyalready" == 1 ]] && dialog --title "so?" --yesno "Do you want to set thi
+			s row manually, or do you want to set it's pattern?" 10 30
 			sp=$?
 			p=0
 			echo ' \hline' >> latex.tex
