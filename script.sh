@@ -1,4 +1,4 @@
-#this was an experiment I used to learn bash scripting and ncurses. I don't know if you should really use this ever.
+#this was an experiment I used to learn bash scripting and ncurses. I don't know if you should really use this script ever for a real project, if I was to make something that could be used to write latex tables as spreadsheets I would likely instead make a web application using MySQL especially which would make storing values for usage in user functions sooo much easier.
 
 function quit(){
 	unset answer & unset tutorialrequests & unset row & unset column & unset answer & unset backrequests & unset quitrequests
