@@ -82,7 +82,7 @@ do
 			echo -n " " >> latex.tex
 
 			while [[ "$no" != *"$sp"* ]] && [ ! $p -eq $column ]; do
-				cmd=$(dialog --title "function" --inputbox "enter the function that you want to run with parameters"  10 20 3>&1 1>&2 2>&3 3>&-)
+				cmd=$(dialog --title "run $p" --inputbox "run code"  10 20 3>&1 1>&2 2>&3 3>&-)
 		                eval $cmd
 
 				echo -n " & $res" >> latex.tex
